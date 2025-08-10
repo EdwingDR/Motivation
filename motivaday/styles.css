@@ -1,0 +1,159 @@
+/* small custom animation for quote */
+.quote-appear {
+  animation: fadeInUp 600ms ease both;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Extra custom styles (kept minimal because Tailwind is used) */
+.btn {
+  padding: 0.5rem 0.75rem;
+  border-radius: 0.5rem;
+  background: white;
+  border: 1px solid #e6e9ef;
+  font-weight: 500;
+  transition: background-color 0.2s ease;
+  cursor: pointer;
+}
+
+.btn-primary {
+  padding: 0.5rem 0.75rem;
+  border-radius: 0.5rem;
+  background: linear-gradient(90deg, #6366f1, #4f46e5);
+  color: white;
+  font-weight: 600;
+  transition: background-color 0.2s ease;
+  cursor: pointer;
+}
+
+.btn-primary:hover {
+  background: linear-gradient(90deg, #4f46e5, #4338ca);
+}
+
+.btn-ghost {
+  padding: 0.5rem 0.75rem;
+  border-radius: 0.5rem;
+  background: transparent;
+  border: 1px solid #e6e9ef;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+/* Colores para botones de compartir en modal */
+.share-option {
+  text-align: left;
+  font-weight: 600;
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  border: none;
+  transition: filter 0.2s ease;
+  display: block;
+}
+
+/* Colores específicos de cada plataforma */
+.share-option[data-platform="whatsapp"] {
+  background-color: #25D366; /* Verde WhatsApp */
+}
+.share-option[data-platform="whatsapp"]:hover {
+  filter: brightness(90%);
+}
+
+.share-option[data-platform="facebook"] {
+  background-color: #1877F2; /* Azul Facebook */
+}
+.share-option[data-platform="facebook"]:hover {
+  filter: brightness(90%);
+}
+
+.share-option[data-platform="twitter"] {
+  background-color: #1DA1F2; /* Azul Twitter */
+}
+.share-option[data-platform="twitter"]:hover {
+  filter: brightness(90%);
+}
+
+.share-option[data-platform="telegram"] {
+  background-color: #0088cc; /* Azul Telegram */
+}
+.share-option[data-platform="telegram"]:hover {
+  filter: brightness(90%);
+}
+
+.share-option[data-platform="linkedin"] {
+  background-color: #0A66C2; /* Azul LinkedIn */
+}
+.share-option[data-platform="linkedin"]:hover {
+  filter: brightness(90%);
+}
+
+.share-option[data-platform="email"] {
+  background-color: #DD4B39; /* Rojo Email */
+}
+.share-option[data-platform="email"]:hover {
+  filter: brightness(90%);
+}
+
+.share-option[data-platform="copy"] {
+  background-color: #6B7280; /* Gris oscuro para copiar */
+}
+.share-option[data-platform="copy"]:hover {
+  filter: brightness(90%);
+}
+
+/* Botones principales colores */
+
+#shareBtn {
+  background-color: #25D366; /* Verde WhatsApp para "Compartir" */
+  color: white;
+  font-weight: 600;
+  border: none;
+  transition: background-color 0.2s ease;
+  cursor: pointer;
+  border-radius: 0.5rem;
+  padding: 0.5rem 1rem;
+}
+
+#shareBtn:hover {
+  background-color: #1ebe57;
+}
+
+#saveFavBtn {
+  background-color: #6366f1; /* Azul índigo para "Guardar" */
+  color: white;
+  font-weight: 600;
+  border: none;
+  transition: background-color 0.2s ease;
+  cursor: pointer;
+  border-radius: 0.5rem;
+  padding: 0.5rem 1rem;
+}
+
+#saveFavBtn:hover {
+  background-color: #4f46e5;
+}
+
+#newQuoteBtn {
+  background-color: #f59e0b; /* Amarillo para "Otra frase" */
+  color: white;
+  font-weight: 600;
+  border: none;
+  transition: background-color 0.2s ease;
+  cursor: pointer;
+  border-radius: 0.5rem;
+  padding: 0.5rem 1rem;
+}
+
+#newQuoteBtn:hover {
+  background-color: #d97706;
+}
